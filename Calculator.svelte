@@ -1,10 +1,11 @@
-<script>
+script>
   let a = 0;
   let b = 0;
   let result = '';
 
   function add()      { result = a + b; }
   function subtract() { result = a - b; }
+	function multiple() {result = a * b;}
   function divide()   { result = b == 0 ? 'Cannot divide by zero' : a / b; }
 </script>
 
@@ -17,6 +18,7 @@
 <button on:click={add}>Add</button>
 <button on:click={subtract}>Subtract</button>
 <button on:click={divide}>Divide</button>
+<button on:click={multiple}>Multiple</button>
 
 <h2>Result: {result}</h2>
 
